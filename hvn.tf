@@ -1,6 +1,6 @@
 resource "hcp_hvn" "example" {
-  hvn_id         = "hvn-b"
+  hvn_id         = "hvn-boundary-secure-access"
   cloud_provider = "aws"
-  region         = "us-west-2"
-  cidr_block     = "172.25.16.0/20"
+  region         = var.region
+  cidr_block     = var.cidr_block
 }

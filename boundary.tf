@@ -1,7 +1,7 @@
 resource "hcp_boundary_cluster" "example" {
-  cluster_id = "boundary-cluster"
-  username   = "test-user"
-  password   = "Password123!"
+  cluster_id = "boundary-cluster-secure-access"
+  username   = var.boundary_username
+  password   = var.boundary_password
   tier = "standard"
   maintenance_window_config {
     day          = "TUESDAY"
