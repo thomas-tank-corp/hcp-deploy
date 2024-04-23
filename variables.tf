@@ -1,6 +1,6 @@
-variable "boundary_username" {}
+variable "password_auth_method_login" {}
 
-variable "boundary_password" {}
+variable "password_auth_method_password" {}
 
 variable "region" {}
 
