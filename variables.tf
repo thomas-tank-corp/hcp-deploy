@@ -4,4 +4,4 @@ variable "boundary_password" {}
 
 variable "region" {}
 
-variable "cidr_block" {}
+variable "hvn_cidr_block" {}
