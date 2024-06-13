@@ -1,6 +1,6 @@
 resource "hcp_vault_cluster" "example" {
-  cluster_id = "vault-cluster-secure-access"
-  //hvn_id          = hcp_hvn.example.hvn_id
+  cluster_id      = "vault-cluster-secure-access"
+  hvn_id          = hcp_hvn.vault_hvn.hvn_id
   tier            = "plus_small"
   public_endpoint = true
 }
