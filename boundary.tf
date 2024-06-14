@@ -1,7 +1,7 @@
 resource "hcp_boundary_cluster" "example" {
   cluster_id = "boundary-cluster-secure-access"
-  username   = var.password_auth_method_login_name
-  password   = var.password_auth_method_password
+  username   = "admin"
+  password   = random_pet.password.id
   tier = "plus"
   maintenance_window_config {
     day          = "TUESDAY"
@@ -10,3 +10,5 @@ resource "hcp_boundary_cluster" "example" {
     upgrade_type = "SCHEDULED"
   }
 }
+
+resource "random_pet" "password" {}
