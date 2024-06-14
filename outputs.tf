@@ -10,3 +10,8 @@ output "vault_addr" {
 output "boundary_addr" {
   value = hcp_boundary_cluster.example.cluster_url
 }
+
+output "boundary_password" {
+  value = random_pet.password.id
+  
+}
